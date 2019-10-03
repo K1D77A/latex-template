@@ -1,0 +1,42 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage[urlcolor=black,colorlinks=false, hidelinks=true,
+filecolor=black,citecolor=black]
+{hyperref}
+\usepackage[backend=biber, sortlocale=auto, hyperref=true, style=authoryear-icomp]{biblatex}
+\addbibresource{sources.bib}
+
+\title{title}
+\author{name\\email}
+\graphicspath{{./images/}}
+\date{\today}
+\hypersetup{colorlinks=true,linkcolor=black,urlcolor=black}
+% abbrevs bgver\b bgfigur\e 
+\begin{document}
+\maketitle
+\tableofcontents
+\vfill
+
+\newpage
+
+
+\begin{figure}[ht!]
+\centering
+\includegraphics[width=50mm]{}
+\includegraphics[width=50mm]{}
+\caption{}\parencite{<name of entry in bibtex>}
+\end{figure}
+
+\section{}
+\subsection{}
+
+\begin{figure}[ht!]
+    {\scriptsize
+\begin{verbatim}
+
+\end{verbatim}}
+  \caption{}
+\end{figure}
+
+\end{document}
