@@ -3,11 +3,20 @@
 \setmainfont{Times New Roman}
 \usepackage{graphicx}
 \usepackage{float}
+\usepackage{titling}
 \usepackage[urlcolor=black,colorlinks=false, hidelinks=true,
 filecolor=black,citecolor=black]
 {hyperref}
 \usepackage[backend=biber, sortlocale=auto, hyperref=true, style=authoryear-icomp]{biblatex}
 \addbibresource{sources.bib}
+
+\pretitle{\begin{center}\Huge\bfseries}
+\posttitle{\par\end{center}\vskip 0.5em}
+\preauthor{\begin{center}\Large}
+\postauthor{\end{center}}
+\predate{\par\large\centering}
+\postdate{\par}
+
 
 \title{title}
 \author{name\\email}
